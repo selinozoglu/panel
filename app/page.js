@@ -7,14 +7,14 @@ import Script from "next/script";
 import Chart from "../assets/js/charts";
 
 import Link from 'next/link'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-import {
-    faSearch,
-    faUser,
-    faCog, faArrowUp, faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//
+//
+// import {
+//     faSearch,
+//     faUser,
+//     faCog, faArrowUp, faPlus,
+// } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import Image from "next/image";
 import team1 from "@/assets/img/team-1.jpg";
@@ -66,9 +66,9 @@ export default function Home() {
                 <span
                     className="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
 
-                       <FontAwesomeIcon
-                           icon={faSearch}
-                       />
+                       {/*<FontAwesomeIcon*/}
+                       {/*    icon={faSearch}*/}
+                       {/*/>*/}
                 </span>
                               <input type="text"
                                      className="pl-9 text-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
@@ -80,9 +80,9 @@ export default function Home() {
                           <li className="flex items-center">
                               <a href="./pages/authentication/signin/illustration.html"
                                  className="block px-0 py-2 text-sm font-semibold transition-all ease-nav-brand text-slate-500 dark:text-white">
-                                  <FontAwesomeIcon className={' sm:mr-1'}
-                                      icon={faUser}
-                                  />
+                                  {/*<FontAwesomeIcon className={' sm:mr-1'}*/}
+                                  {/*    icon={faUser}*/}
+                                  {/*/>*/}
                                   <span className="hidden sm:inline">Sign In</span>
                               </a>
                           </li>
@@ -101,9 +101,9 @@ export default function Home() {
                               <Link href="/settings"
                                  className="p-0 text-sm transition-all ease-nav-brand text-slate-500 dark:text-white">
 
-                                  <FontAwesomeIcon className={' sm:mr-1'}
-                                                   icon={faCog}
-                                  />
+                                  {/*<FontAwesomeIcon className={' sm:mr-1'}*/}
+                                  {/*                 icon={faCog}*/}
+                                  {/*/>*/}
                               </Link>
                           </li>
 
