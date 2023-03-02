@@ -2,9 +2,20 @@
 import React from 'react';
 import '../../assets/js/plugins/fullcalendar.min'
 import home from '../../assets/img/icons/home.svg'
+import team1 from '../../assets/img/team-1.jpg'
+import team2 from '../../assets/img/team-2.jpg'
+import team3 from '../../assets/img/team-3.jpg'
+import team4 from '../../assets/img/team-4.jpg'
+import team5 from '../../assets/img/team-5.jpg'
 import Script from "next/script";
 import Link from 'next/link'
 import Image from 'next/image'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+import {
+    faPlus, faArrowUp
+} from "@fortawesome/free-solid-svg-icons";
 
 const Calendar = () => {
     return (
@@ -195,28 +206,28 @@ const Calendar = () => {
                                     <div>
                                         <a href="javascript:;"
                                            className="relative z-20 inline-flex items-center justify-center text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                            <img className="w-full rounded-circle" alt="Image placeholder"
-                                                 src="../../assets/img/team-1.jpg"/>
+                                            <Image className="w-full rounded-circle" alt="Image placeholder"
+                                                 src={team1}/>
                                         </a>
                                         <a href="javascript:;"
                                            className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                            <img className="w-full rounded-circle" alt="Image placeholder"
-                                                 src="../../assets/img/team-2.jpg"/>
+                                            <Image className="w-full rounded-circle" alt="Image placeholder"
+                                                   src={team2}/>
                                         </a>
                                         <a href="javascript:;"
                                            className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                            <img className="w-full rounded-circle" alt="Image placeholder"
-                                                 src="../../assets/img/team-3.jpg"/>
+                                            <Image className="w-full rounded-circle" alt="Image placeholder"
+                                                   src={team3}/>
                                         </a>
                                         <a href="javascript:;"
                                            className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                            <img className="w-full rounded-circle" alt="Image placeholder"
-                                                 src="../../assets/img/team-4.jpg"/>
+                                            <Image className="w-full rounded-circle" alt="Image placeholder"
+                                                   src={team4}/>
                                         </a>
                                         <a href="javascript:;"
                                            className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                            <img className="w-full rounded-circle" alt="Image placeholder"
-                                                 src="../../assets/img/team-5.jpg"/>
+                                            <Image className="w-full rounded-circle" alt="Image placeholder"
+                                                   src={team5}/>
                                         </a>
                                     </div>
                                 </div>
@@ -225,7 +236,9 @@ const Calendar = () => {
                             <div className="pl-6">
                                 <button type="button"
                                         className="mt-4 inline-block w-9 h-9 p-2.8 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-slate-700 border-solid rounded-lg cursor-pointer leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 active:opacity-85 text-slate-700 active:bg-slate-700 active:text-white">
-                                    <i className="fa fa-plus" aria-hidden="true"></i>
+                                    <FontAwesomeIcon
+                                        icon={faPlus}
+                                    />
                                 </button>
                             </div>
                         </div>
@@ -1162,7 +1175,8 @@ const Calendar = () => {
                                             <div className="w-7/12 max-w-full px-3 flex-0">
                                                 <h6 className="mb-0 text-white">Productivity</h6>
                                                 <p className="leading-normal text-white text-sm">
-                                                    <i className="fa fa-arrow-up text-lime-500"></i>
+
+                                                    <FontAwesomeIcon icon={faArrowUp}/>
                                                     <span className="font-semibold">4% more</span>
                                                     in 2021
                                                 </p>
@@ -1217,7 +1231,7 @@ const Calendar = () => {
                 <Script src="../../assets/js/plugins/fullcalendar.min.js"/>
                 <Script src="../../assets/js/plugins/chartjs.min.js"/>
                 <Script src="../../assets/js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="../../../assets/js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="../../assets/js/plugins/perfect-scrollbar.min.js"/>
             </div>
         </>
 

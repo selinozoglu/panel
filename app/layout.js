@@ -13,6 +13,10 @@ import Image from "next/image";
 import Script from 'next/script'
 import SideBar from "../components/SideBar/SideBar";
 import Footer from "./../components/Footer";
+import './../assets/js/charts';
+import './../assets/css/soft-ui-dashboard-tailwind.css'
+import './../assets/js/charts'
+import './../assets/js/plugins/chartjs.min'
 import ArrowDownLight from '../assets/img/down-arrow-white.svg'
 import ArrowDownDark from '../assets/img/down-arrow-dark.svg'
 

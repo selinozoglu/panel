@@ -3,6 +3,11 @@ import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../../assets/img/logos/hemenofis.png'
+import dashboard from '../../assets/img/icons/dashboard.svg'
+import member from '../../assets/img/icons/people.svg'
+import pages from '../../assets/img/icons/pages.svg'
+import billing from '../../assets/img/icons/billing.svg'
+import auth from '../../assets/img/icons/auth.svg'
 import { Open_Sans } from 'next/font/google'
 
 const inter = Open_Sans({ subsets: ['latin'] })
@@ -33,59 +38,83 @@ function SideBar(props) {
             <hr className="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent"/>
 
             <div className="items-center block w-full h-auto grow basis-full" id="sidenav-collapse-main">
-
+d
 
                 <ul className="flex flex-col pl-0 mb-0 list-none">
                     <li className="mt-0.5 w-full">
                         <Link active_primary collapse_trigger="primary" href="/"
-                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200 after:content-['\f107'] dark:text-white dark:opacity-80"
+                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"
                            aria-expanded="true">
                             <div
                                 className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">
-                                <img src="" alt=""/>
+                                <Image src={pages} alt=""/>
                             </div>
                             <span
                                 className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Pages</span>
                         </Link>
                     </li>
                     <li className="mt-0.5 w-full">
-                        <Link active_primary collapse_trigger="primary" href="/"
-                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200 after:content-['\f107'] dark:text-white dark:opacity-80"
+                        <Link active_primary collapse_trigger="primary" href="/member-management"
+                              className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"
+                              aria-expanded="true">
+                            <div
+                                className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">
+                                <Image src={member}/>
+                            </div>
+                            <span
+                                className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Member Management</span>
+                        </Link>
+                    </li>
+                    {/*<li className="mt-0.5 w-full">*/}
+                    {/*    <Link active_primary collapse_trigger="primary" href="/spaces"*/}
+                    {/*          className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"*/}
+                    {/*          aria-expanded="true">*/}
+                    {/*        <div*/}
+                    {/*            className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">*/}
+                    {/*            <img src="" alt=""/>*/}
+                    {/*        </div>*/}
+                    {/*        <span*/}
+                    {/*            className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Spaces</span>*/}
+                    {/*    </Link>*/}
+                    {/*</li>*/}
+                    <li className="mt-0.5 w-full">
+                        <Link active_primary collapse_trigger="primary" href="/billing"
+                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"
                            aria-expanded="true">
                             <div
                                 className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">
-                                <img src="" alt=""/>
+                                <Image src={billing}/>
                             </div>
                             <span
-                                className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Spaces</span>
+                                className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Billing</span>
                         </Link>
                     </li>
                     <li className="mt-0.5 w-full">
                         <Link active_primary collapse_trigger="primary" href="/calendar"
-                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200 after:content-['\f107'] dark:text-white dark:opacity-80"
+                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"
                            aria-expanded="true">
                             <div className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">
-                                <img src="" alt=""/>
+                                <Image src={dashboard}/>
                             </div>
                             <span className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Calendar</span>
                         </Link>
                     </li>
                     <li className="mt-0.5 w-full">
-                        <Link active_primary collapse_trigger="primary" href="/calendar"
-                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200 after:content-['\f107'] dark:text-white dark:opacity-80"
+                        <Link active_primary collapse_trigger="primary" href="/payment"
+                           className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"
                            aria-expanded="true">
                             <div className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">
-                                <img src="" alt=""/>
+                                <Image src={billing}/>
                             </div>
                             <span className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Payment</span>
                         </Link>
                     </li>
                     <li className="mt-0.5 w-full">
-                        <Link active_primary collapse_trigger="primary" href="/calendar"
-                              className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200 after:content-['\f107'] dark:text-white dark:opacity-80"
+                        <Link active_primary collapse_trigger="primary" href="/analytics"
+                              className="after:ease-soft-in-out after:font-awesome-5-free ease-soft-in-out text-sm py-2.7 active xl:shadow-soft-xl my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-all after:ml-auto after:inline-block after:rotate-180 after:font-bold after:text-slate-800 after:antialiased after:transition-all after:duration-200  dark:text-white dark:opacity-80"
                               aria-expanded="true">
                             <div className="stroke-none shadow-soft-sm bg-gradient-to-tl from-purple-700 to-pink-500 mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center fill-current p-2.5 text-center text-black">
-                                <img src="" alt=""/>
+                               <Image src={auth}/>
                             </div>
                             <span className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Analytics</span>
                         </Link>
