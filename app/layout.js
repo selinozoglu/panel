@@ -63,6 +63,11 @@ export default function RootLayout({children}) {
                     <Script src="js/plugins/chartjs.min.js"/>
                     <Script src="js/plugins/perfect-scrollbar.min.js"/>
                     <Script src="https://unpkg.com/@popperjs/core@2"></Script>
+                    <Script src="js/plugins/jkanban.min.js"></Script>
+                    <Script src="js/plugins/dragula.min.js"></Script>
+                    <Script src="js/plugins/perfect-scrollbar.min.js"></Script>
+
+                    <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"></Script>
                 </Head>
                 <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
                 <Script src="js/charts.js" crossOrigin="anonymous"></Script>

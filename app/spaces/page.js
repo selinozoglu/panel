@@ -3,6 +3,7 @@ import React from 'react';
 // import './../../assets/js/kanban'
 // import './../../assets/js/plugins/jkanban'
 // import './../../assets/js/plugins/jkanban.min'
+import './../../assets/css/kanban.css'
 const Spaces = () => {
     return (
         <>

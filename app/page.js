@@ -7,17 +7,12 @@ import Script from "next/script";
 import Chart from "../assets/js/charts";
 
 import Link from 'next/link'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//
-//
-// import {
-//     faSearch,
-//     faUser,
-//     faCog, faArrowUp, faPlus,
-// } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import Image from "next/image";
 import team1 from "@/assets/img/team-1.jpg";
+// import arrowDown from "../assets/img/icons/arrow-down-solid.svg"
+import arrowUp from "@/assets/img/team-1.jpg";
+
 import team2 from "@/assets/img/team-2.jpg";
 import team3 from "@/assets/img/team-3.jpg";
 import team4 from "@/assets/img/team-4.jpg";
@@ -1231,7 +1226,7 @@ export default function Home() {
                                                   <i className="fas fa-arrow-down text-3xs"></i>
                                               </button>
                                               <div className="flex flex-col">
-                                                  <h6 className="mb-1 leading-normal text-sm text-slate-700 dark:text-white">Netflix</h6>
+                                                  <h6 className="mb-1 leading-normal text-sm text-slate-700 dark:text-white">Workinton Izmir</h6>
                                                   <span className="leading-tight text-xs">27 March 2020, at 12:30 PM</span>
                                               </div>
                                           </div>
@@ -1250,7 +1245,7 @@ export default function Home() {
                                                   <i className="fas fa-arrow-up text-3xs"></i>
                                               </button>
                                               <div className="flex flex-col">
-                                                  <h6 className="mb-1 leading-normal text-sm text-slate-700 dark:text-white">Apple</h6>
+                                                  <h6 className="mb-1 leading-normal text-sm text-slate-700 dark:text-white">Workinton Istanbul</h6>
                                                   <span className="leading-tight text-xs">23 March 2020, at 04:30 AM</span>
                                               </div>
                                           </div>
@@ -1310,7 +1305,7 @@ export default function Home() {
                                               </button>
                                               <div className="flex flex-col">
                                                   <h6 className="mb-1 leading-normal text-sm text-slate-700 dark:text-white">via
-                                                      PayPal</h6>
+                                                      Card</h6>
                                                   <span className="leading-tight text-xs">07 June 2021, at 09:00 AM</span>
                                               </div>
                                           </div>
@@ -1346,7 +1341,7 @@ export default function Home() {
                                           <div className="flex items-center">
                                               <button
                                                   className="active:shadow-soft-xs active:opacity-85 ease-soft-in leading-pro text-xs bg-150 bg-x-25 rounded-3.5xl h-6 w-6 mb-0 mr-4 flex cursor-pointer items-center justify-center border border-solid border-red-600 bg-transparent p-4 text-center align-middle font-bold text-red-600 shadow-none transition-all hover:bg-transparent hover:text-red-600 hover:opacity-75 hover:shadow-none active:bg-red-600 active:text-black hover:active:bg-transparent hover:active:text-red-600 hover:active:opacity-75 hover:active:shadow-none">
-                                                  <i className="fas fa-arrow-down text-3xs"></i>
+                                                  {/*<Image src={arrowDown}></Image>*/}
                                               </button>
                                               <div className="flex flex-col">
                                                   <h6 className="mb-1 leading-normal text-sm text-slate-700 dark:text-white">Services</h6>
