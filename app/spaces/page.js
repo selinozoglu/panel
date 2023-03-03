@@ -4,6 +4,15 @@ import React from 'react';
 // import './../../assets/js/plugins/jkanban'
 // import './../../assets/js/plugins/jkanban.min'
 import './../../assets/css/kanban.css'
+import Image from "next/image";
+import team1 from './../../assets/img/team-1.jpg'
+import team2 from './../../assets/img/team-2.jpg'
+import team3 from './../../assets/img/team-3.jpg'
+import team4 from './../../assets/img/team-4.jpg'
+import team5 from './../../assets/img/team-5.jpg'
+import meeting from './../../assets/img/meeting.jpg'
+import office from './../../assets/img/office-dark.jpg'
+import homedecor from './../../assets/img/home-decor-1.jpg'
 const Spaces = () => {
     return (
         <>
@@ -214,28 +223,24 @@ const Spaces = () => {
                                 <div>
                                     <a href="javascript:;"
                                        className="relative z-20 inline-flex items-center justify-center text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                        <img className="w-full rounded-circle" alt="Image placeholder"
-                                             src="../../assets/img/team-1.jpg"/>
+
+                                        <Image src={team1} className="w-full rounded-circle"></Image>
                                     </a>
                                     <a href="javascript:;"
                                        className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                        <img className="w-full rounded-circle" alt="Image placeholder"
-                                             src="../../assets/img/team-2.jpg"/>
+                                        <Image src={team2} className="w-full rounded-circle"></Image>
                                     </a>
                                     <a href="javascript:;"
                                        className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                        <img className="w-full rounded-circle" alt="Image placeholder"
-                                             src="../../assets/img/team-3.jpg"/>
+                                        <Image src={team3} className="w-full rounded-circle"></Image>
                                     </a>
                                     <a href="javascript:;"
                                        className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                        <img className="w-full rounded-circle" alt="Image placeholder"
-                                             src="../../assets/img/team-4.jpg"/>
+                                        <Image src={team4} className="w-full rounded-circle"></Image>
                                     </a>
                                     <a href="javascript:;"
                                        className="relative z-20 inline-flex items-center justify-center -ml-4 text-white transition-all duration-200 border-2 border-white border-solid w-9 h-9 ease-soft-in-out text-sm rounded-circle hover:z-30">
-                                        <img className="w-full rounded-circle" alt="Image placeholder"
-                                             src="../../assets/img/team-5.jpg"/>
+                                        <Image src={team5} className="w-full rounded-circle"></Image>
                                     </a>
                                 </div>
                             </div>
@@ -275,8 +280,9 @@ const Spaces = () => {
                                                 <div className="kanban-item rounded-lg" data-eid="_task_do_something_id"
                                                      data-assignee="Done Joe"
                                                      data-description="This task's description is for something, but not for anything"
-                                                     data-class="rounded-lg"><img src="../../assets/img/office-dark.jpg"
-                                                                                  className="w-full"/><span
+                                                     data-class="rounded-lg">
+                                                    <Image src={office} className="w-full"></Image>
+                                                    <span
                                                     className="mt-4 py-1.8 px-3 text-xxs rounded-1 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white bg-gradient-to-tl from-purple-700 to-pink-500">Pending</span>
                                                     <p className="text mt-2">Website Design: New cards for blog section
                                                         and profile details</p>
@@ -287,20 +293,15 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-1.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jessica Rowland">
+                                                            <Image src={team1} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Audrey Love"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-2.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                            data-toggle="tooltip" data-original-title="Audrey Love">   <Image src={team2} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                             data-toggle="tooltip"
-                                                            data-original-title="Michael Lewis"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-3.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-original-title="Michael Lewis">   <Image src={team3} className="w-full !rounded-circle"></Image></a></div>
                                                     </div></div>
                                             </main>
                                             <footer></footer>
@@ -324,14 +325,10 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jana Lucie"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-3.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jana Lucie">   <Image src={team3} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-2.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-toggle="tooltip" data-original-title="Jessica Rowland">   <Image src={team1} className="w-full !rounded-circle"></Image></a></div>
                                                     </div>
                                                 </div>
                                                 <div className="kanban-item rounded-lg" data-eid="_task_4_title_id"
@@ -345,21 +342,16 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jana Lucie"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-5.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jana Lucie">   <Image src={team5} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-4.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-toggle="tooltip" data-original-title="Jessica Rowland">   <Image src={team2} className="w-full !rounded-circle"></Image></a></div>
                                                     </div>
                                                 </div>
                                                 <div className="kanban-item rounded-lg"
                                                      data-eid="_task_do_something_4_id" data-assignee="Done Joe"
                                                      data-description="This task's description is for something, but not for anything"
-                                                     data-class="rounded-lg"><img src="../../assets/img/meeting.jpg"
-                                                                                  className="w-full"/><span
+                                                     data-class="rounded-lg">   <Image src={meeting} className="w-full"></Image><span
                                                     className="mt-3 py-1.8 px-3 text-xxs rounded-1 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white bg-gradient-to-tl from-blue-600 to-cyan-400">Updates</span>
                                                     <p className="text mt-2">Vue 3 Updates</p>
                                                     <div className="flex">
@@ -369,20 +361,14 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-1.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jessica Rowland">   <Image src={team4} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Audrey Love"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-2.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                            data-toggle="tooltip" data-original-title="Audrey Love">   <Image src={team1} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                             data-toggle="tooltip"
-                                                            data-original-title="Michael Lewis"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-4.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-original-title="Michael Lewis">   <Image src={team2} className="w-full !rounded-circle"></Image></a></div>
                                                     </div></div>
                                             </main>
                                             <footer></footer>
@@ -408,14 +394,10 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jana Lucie"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-3.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jana Lucie"><Image src={team3} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-2.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-toggle="tooltip" data-original-title="Jessica Rowland"><Image src={team2} className="w-full !rounded-circle"></Image></a></div>
                                                     </div>
                                                 </div>
                                                 <div className="kanban-item rounded-lg" data-eid="_task_run_id"
@@ -437,9 +419,7 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-3.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                                                    data-original-title="Jessica Rowland"><Image src={team1} className="w-full !rounded-circle"></Image></a></div>
                                                     </div>
                                                 </div>
                                                 <div className="kanban-item rounded-lg"
@@ -464,14 +444,10 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jana Lucie"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-5.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jana Lucie"><Image src={team5} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Mike Alis"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-1.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-toggle="tooltip" data-original-title="Mike Alis"><Image src={team1} className="w-full !rounded-circle"></Image></a></div>
                                                     </div>
                                                 </div>
                                             </main>
@@ -488,8 +464,7 @@ const Spaces = () => {
                                                 <div className="kanban-item rounded-lg" data-eid="_task_all_right_id"
                                                      data-assignee="Done Joe"
                                                      data-description="This task's description is for something, but not for anything"
-                                                     data-class="rounded-lg"><img
-                                                    src="../../assets/img/home-decor-1.jpg" className="w-full"/><span
+                                                     data-class="rounded-lg"><Image src={homedecor} className="w-full !rounded-circle"></Image><span
                                                     className="mt-3 py-1.8 px-3 text-xxs rounded-1 inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white bg-gradient-to-tl from-green-600 to-lime-400">Done</span>
                                                     <p className="text mt-2">Redesign for the home page</p>
                                                     <div className="flex">
@@ -499,20 +474,14 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Jessica Rowland"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-5.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Jessica Rowland"><Image src={team3} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
-                                                            data-toggle="tooltip" data-original-title="Audrey Love"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-1.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                            data-toggle="tooltip" data-original-title="Audrey Love"><Image src={team1} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                             data-toggle="tooltip"
-                                                            data-original-title="Michael Lewis"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-4.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-original-title="Michael Lewis"><Image src={team4} className="w-full !rounded-circle"></Image></a></div>
                                                     </div></div>
                                                 <div className="kanban-item rounded-lg" data-eid="_task_ok_id"
                                                      data-assignee="Done Joe"
@@ -527,15 +496,11 @@ const Spaces = () => {
                                                         <div className="ml-auto"><a href="javascript:;"
                                                                                     className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                                                     data-toggle="tooltip"
-                                                                                    data-original-title="Michael Laurence"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-1.jpg"
-                                                            className="w-full !rounded-circle"/></a><a
+                                                                                    data-original-title="Michael Laurence"><Image src={team1} className="w-full !rounded-circle"></Image></a><a
                                                             href="javascript:;"
                                                             className="relative z-20 inline-flex items-center justify-center w-6 h-6 -ml-2 text-white transition-all duration-200 border-2 border-white border-solid ease-soft-in-out text-xs rounded-circle hover:z-30"
                                                             data-toggle="tooltip"
-                                                            data-original-title="Michael Lewis"><img
-                                                            alt="Image placeholder" src="../../assets/img/team-4.jpg"
-                                                            className="w-full !rounded-circle"/></a></div>
+                                                            data-original-title="Michael Lewis"><Image src={team2} className="w-full !rounded-circle"></Image></a></div>
                                                     </div>
                                                 </div>
                                             </main>
