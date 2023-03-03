@@ -12,8 +12,8 @@ const Footer = () => {
                             {/*    document.write(new Date().getFullYear() + ",");*/}
                             {/*</script>*/}
                             made by
-                            <a href="https://www.creative-tim.com"
-                               className="font-semibold text-slate-700 dark:text-white" target="_blank">HemenOfis</a>
+                            <a href=""
+                               className="font-semibold text-slate-700 dark:text-white" target="_blank"> HemenOfis  </a>
                             for a better web.
                         </div>
                     </div>
