@@ -11,20 +11,15 @@ const Footer = () => {
                             {/*<script>*/}
                             {/*    document.write(new Date().getFullYear() + ",");*/}
                             {/*</script>*/}
-                            made with <i className="fa fa-heart"></i> by
+                            made by
                             <a href="https://www.creative-tim.com"
-                               className="font-semibold text-slate-700 dark:text-white" target="_blank">Creative
-                                Tim</a>
+                               className="font-semibold text-slate-700 dark:text-white" target="_blank">HemenOfis</a>
                             for a better web.
                         </div>
                     </div>
                     <div className="w-full max-w-full px-3 mt-0 shrink-0 lg:w-1/2 lg:flex-none">
                         <ul className="flex flex-wrap justify-center pl-0 mb-0 list-none lg:justify-end">
-                            <li className="nav-item">
-                                <a href="https://www.creative-tim.com"
-                                   className="block px-4 pt-0 pb-1 font-normal transition-colors ease-soft-in-out text-sm text-slate-500"
-                                   target="_blank">Creative Tim</a>
-                            </li>
+
                             <li className="nav-item">
                                 <a href="https://www.creative-tim.com/presentation"
                                    className="block px-4 pt-0 pb-1 font-normal transition-colors ease-soft-in-out text-sm text-slate-500"
