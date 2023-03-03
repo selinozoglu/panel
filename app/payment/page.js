@@ -2,6 +2,7 @@
 import React from 'react';
 import '../../assets/css/soft-ui-dashboard-tailwind.css'
 import '../../assets/css/soft-ui-dashboard-tailwind.css'
+import '../../assets/css/perfect-scrollbar.css'
 import Script from "next/script";
 import "../../assets/js/plugins/datatables.min.js"
 import "../../assets/js/plugins/perfect-scrollbar.min.js"

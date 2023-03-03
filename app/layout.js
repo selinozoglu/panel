@@ -2,6 +2,20 @@
 import './globals.css'
 import '../assets/css/full-calendar.css'
 import "../assets/css/nucleo-icons.css";
+import "../assets/css/datatable.css";
+import "../assets/css/choices.css";
+import "../assets/css/dropzone.css";
+import "../assets/css/editor-quill.css";
+import "../assets/css/flatpickr.css";
+import "../assets/css/full-calendar.css";
+import "../assets/css/kanban.css";
+// import "../assets/css/leaflet.css";
+import "../assets/css/noui-slider.css";
+import "../assets/css/nucleo-icons.css";
+import "../assets/css/perfect-scrollbar.css";
+import "../assets/css/photo-swipe.css";
+import "../assets/css/sweet-alerts.css";
+import "../assets/css/tooltips.css";
 import "../assets/css/nucleo-svg.css";
 import "../assets/css/soft-ui-dashboard-tailwind.css";
 import "../assets/css/soft-ui-dashboard-tailwind.min.css";
