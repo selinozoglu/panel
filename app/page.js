@@ -219,24 +219,27 @@ export default function Home() {
                                   </div>
                               </div>
                           </div>
-                          <div className="w-full max-w-full px-3 sm:flex-0 shrink-0 sm:w-4/12">
-                              <div
-                                  className="border-black/12.5 shadow-soft-xl dark:bg-gray-950 dark:shadow-soft-dark-xl relative flex min-w-0 flex-col overflow-hidden break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
-                                  <div className="p-4 pb-0 rounded-t-2xl">
-                                      <p className="mb-0 font-semibold leading-normal capitalize text-sm dark:text-white dark:opacity-60">Analytics</p>
-                                      <h5 className="mb-0 font-bold dark:text-white">
-                                          5,927
-                                          <span className="font-bold leading-normal text-sm text-lime-500">+55%</span>
-                                      </h5>
-                                  </div>
-                                  <div className="flex-auto p-0">
-                                      <div>
 
-                                          <canvas id="chart-line-1" className="chart-canvas" height="100"></canvas>
+                              <div className="w-full max-w-full px-3 sm:flex-0 shrink-0 sm:w-4/12">  <Link href={'/analytics'}>
+                                  <div
+                                      className="border-black/12.5 shadow-soft-xl dark:bg-gray-950 dark:shadow-soft-dark-xl relative flex min-w-0 flex-col overflow-hidden break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+                                      <div className="p-4 pb-0 rounded-t-2xl">
+                                          <p className="mb-0 font-semibold leading-normal capitalize text-sm dark:text-white dark:opacity-60">Analytics</p>
+                                          <h5 className="mb-0 font-bold dark:text-white">
+                                              5,927
+                                              <span className="font-bold leading-normal text-sm text-lime-500">+55%</span>
+                                          </h5>
+                                      </div>
+                                      <div className="flex-auto p-0">
+                                          <div>
+
+                                              <canvas id="chart-line-1" className="chart-canvas" height="100"></canvas>
+                                          </div>
                                       </div>
                                   </div>
-                              </div>
-                          </div>
+                              </Link> </div>
+
+
                       </div>
                       <div className="flex flex-wrap mt-6 -mx-3">
                           <div className="w-full max-w-full px-3 flex-0">
