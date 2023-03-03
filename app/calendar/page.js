@@ -1220,18 +1220,7 @@ const Calendar = () => {
 
 
                 </div>
-                <Script src="../../assets/js/plugins/fullcalendar.min.js"/>
-                <Script src="../../assets/js/plugins/chartjs.min.js"/>
-                <Script src="../../assets/js/plugins/chartjs.min.js"/>
-                <Script src="../../assets/js/charts.js"/>
-                <Script src="../../assets/js/plugins/threejs.js"/>
-                <Script src="../../assets/js/plugins/orbit-controls.js"/>
-                <Script src="../../assets/js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="../../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
-                <Script src="../../assets/js/plugins/fullcalendar.min.js"/>
-                <Script src="../../assets/js/plugins/chartjs.min.js"/>
-                <Script src="../../assets/js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="../../assets/js/plugins/perfect-scrollbar.min.js"/>
+
             </div>
         </>
 

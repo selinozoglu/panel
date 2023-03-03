@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import './../../assets/js/kanban'
-import './../../assets/js/plugins/jkanban'
-import './../../assets/js/plugins/jkanban.min'
+// import './../../assets/js/kanban'
+// import './../../assets/js/plugins/jkanban'
+// import './../../assets/js/plugins/jkanban.min'
 const Spaces = () => {
     return (
         <>

@@ -5,20 +5,19 @@ import "../assets/css/nucleo-icons.css";
 import "../assets/css/nucleo-svg.css";
 import "../assets/css/soft-ui-dashboard-tailwind.css";
 import "../assets/css/soft-ui-dashboard-tailwind.min.css";
-import "../assets/js/charts";
-import "../assets/js/plugins/chartjs.min";
-import '../assets/js/plugins/fullcalendar.min'
+// import "js/charts";
+// import "js/plugins/chartjs.min";
+// import 'js/plugins/fullcalendar.min'
 import Head from "next/head";
 import Image from "next/image";
 import Script from 'next/script'
 import SideBar from "../components/SideBar/SideBar";
 import Footer from "./../components/Footer";
-import './../assets/js/charts';
-import './../assets/css/soft-ui-dashboard-tailwind.css'
-import './../assets/js/charts'
-import './../assets/js/plugins/chartjs.min'
-import ArrowDownLight from '../assets/img/down-arrow-white.svg'
-import ArrowDownDark from '../assets/img/down-arrow-dark.svg'
+// import 'js/charts';
+import '../assets/css/soft-ui-dashboard-tailwind.css'
+// import 'js/charts'
+// import 'js/plugins/chartjs.min'
+
 
 import {Open_Sans} from 'next/font/google'
 import Login from "@/app/login/login";
@@ -50,12 +49,46 @@ export default function RootLayout({children}) {
 
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
 
+                    <link href="./../assets/css/soft-ui-dashboard-tailwind.css?v=1.0.1" rel="stylesheet" />
 
-                    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></script>
-
-                    <script src="https://unpkg.com/@popperjs/core@2"></script>
+                    <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
+                    <Script src="../assets/js/charts.js" crossOrigin="anonymous"/>
+                    <Script src="js/plugins/chartjs.min.js"/>
+                    <Script src="js/charts.js"/>
+                    <Script src="js/plugins/threejs.js"/>
+                    <Script src="js/plugins/orbit-controls.js"/>
+                    <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                    <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
+                    <Script src="js/plugins/fullcalendar.min.js"/>
+                    <Script src="js/plugins/chartjs.min.js"/>
+                    <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                    <Script src="https://unpkg.com/@popperjs/core@2"></Script>
                 </Head>
+                <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
+                <Script src="js/charts.js" crossOrigin="anonymous"></Script>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/charts.js"/>
+                <Script src="js/plugins/threejs.js"/>
+                <Script src="js/plugins/orbit-controls.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
+                <Script src="js/plugins/fullcalendar.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="https://unpkg.com/@popperjs/core@2"></Script>
 
+                <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
+                <Script src="../assets/js/charts.js" crossOrigin="anonymous"></Script>
+                <Script src="../assets/js/plugins/chartjs.min.js"/>
+                <Script src="../assets/js/charts.js"/>
+                <Script src="../assets/js/plugins/threejs.js"/>
+                <Script src="../assets/js/plugins/orbit-controls.js"/>
+                <Script src="../assets/js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
+                <Script src="../assets/js/plugins/fullcalendar.min.js"/>
+                <Script src="../assets/js/plugins/chartjs.min.js"/>
+                <Script src="../assets/js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="https://unpkg.com/@popperjs/core@2"></Script>
                 <body className="m-0 font-sans antialiased
                                 font-normal text-left leading-default text-base
                                 dark:bg-slate-950 bg-gray-50 text-slate-500 dark:text-white/80">
@@ -208,9 +241,9 @@ export default function RootLayout({children}) {
                 </footer>
                 </body>
 
-                <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
+                {/*<script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>*/}
 
-                <script src="../../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"></script>
+                {/*<script src="../../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"></script>*/}
                 </html>
             </>
         )
@@ -234,6 +267,18 @@ export default function RootLayout({children}) {
                 <link
                     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
                     rel="stylesheet"/>
+                <Script src="js/plugins/fullcalendar.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/charts.js"/>
+                <Script src="js/plugins/threejs.js"/>
+                <Script src="js/plugins/orbit-controls.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
+                <Script src="js/plugins/fullcalendar.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
             </Head>
             <body className="m-0 font-sans text-base antialiased
                       font-normal text-left leading-default dark:bg-slate-950
@@ -247,17 +292,6 @@ export default function RootLayout({children}) {
                 {children}
                 <Footer/>
             </main>
-
-
-            <Script src="../assets/js/plugins/chartjs.min.js"/>
-            <Script src="../assets/js/charts.js"/>
-            <Script src="../assets/js/plugins/threejs.js"/>
-            <Script src="../assets/js/plugins/orbit-controls.js"/>
-            <Script src="../assets/js/plugins/perfect-scrollbar.min.js"/>
-            <Script src="../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
-            <Script src="../assets/js/plugins/fullcalendar.min.js"/>
-            <Script src="../assets/js/plugins/chartjs.min.js"/>
-            <Script src="../assets/js/plugins/perfect-scrollbar.min.js"/>
             </body>
             </html>
         )

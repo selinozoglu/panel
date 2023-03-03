@@ -219,7 +219,7 @@ export default function Home() {
                                   </div>
                                   <div className="flex-auto p-0">
                                       <div>
-                                          <canvas id="chart-line-2" className="chart-canvas" height="100"></canvas>
+                                          <canvas id="chart-line-1" className="chart-canvas" height="100"></canvas>
                                       </div>
                                   </div>
                               </div>
@@ -237,7 +237,7 @@ export default function Home() {
                                   <div className="flex-auto p-0">
                                       <div>
 
-                                          <canvas id="chart-line-3" className="chart-canvas" height="100"></canvas>
+                                          <canvas id="chart-line-1" className="chart-canvas" height="100"></canvas>
                                       </div>
                                   </div>
                               </div>

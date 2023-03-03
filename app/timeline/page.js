@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Timeline = () => {
+const Timeline = ({props}) => {
     return (
 
         <div className="w-full p-6 mx-auto">

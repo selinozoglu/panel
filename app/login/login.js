@@ -180,9 +180,9 @@ const Login = (props) => {
         </footer>
         </body>
 
-        <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
+        <script src="./../assets/js/plugins/perfect-scrollbar.min.js"></script>
 
-        <script src="../../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"></script>
+        <script src="./../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"></script>
         </html>
     );
 };
