@@ -68,7 +68,7 @@ export default function RootLayout({children}) {
                     <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
                     <Script src="../assets/js/charts.js" crossOrigin="anonymous"/>
                     <Script src="js/plugins/chartjs.min.js"/>
-                    <Script src="js/charts.js"/>
+                    <Script src="/charts.js"/>
                     <Script src="js/plugins/threejs.js"/>
                     <Script src="js/plugins/orbit-controls.js"/>
                     <Script src="js/plugins/perfect-scrollbar.min.js"/>
@@ -95,6 +95,19 @@ export default function RootLayout({children}) {
                 <Script src="js/plugins/chartjs.min.js"/>
                 <Script src="js/plugins/perfect-scrollbar.min.js"/>
                 <Script src="https://unpkg.com/@popperjs/core@2"></Script>
+
+                <Script src="js/plugins/fullcalendar.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/charts.js"/>
+                <Script src="js/plugins/threejs.js"/>
+                <Script src="js/plugins/orbit-controls.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
+                <Script src="js/plugins/fullcalendar.min.js"/>
+                <Script src="js/plugins/chartjs.min.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
+                <Script src="js/plugins/perfect-scrollbar.min.js"/>
 
                 <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
                 <Script src="../assets/js/charts.js" crossOrigin="anonymous"></Script>
@@ -286,9 +299,12 @@ export default function RootLayout({children}) {
                 <link
                     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
                     rel="stylesheet"/>
+
+                {/*<Script src="/charts.js"/>*/}
+                {/*<Script src="/Chart.extension.js"/>*/}
+                {/*<Script src="/chartjs.min.js"/>*/}
                 <Script src="js/plugins/fullcalendar.min.js"/>
-                <Script src="js/plugins/chartjs.min.js"/>
-                <Script src="js/plugins/chartjs.min.js"/>
+
                 <Script src="js/charts.js"/>
                 <Script src="js/plugins/threejs.js"/>
                 <Script src="js/plugins/orbit-controls.js"/>
@@ -311,6 +327,13 @@ export default function RootLayout({children}) {
                 {children}
                 <Footer/>
             </main>
+
+
+            <Script src="/charts.js"/>
+            <Script src="/Chart.extension.js"/>
+            <Script src="/chartjs.min.js"/>
+
+
             </body>
             </html>
         )

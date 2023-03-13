@@ -82,7 +82,7 @@ function SideBar(props) {
                                 <Image src={billing}/>
                             </div>
                             <span
-                                className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">Billing</span>
+                                className="ml-1 duration-300 opacity-100 pointer-events-none ease-soft text-slate-700">User Settings</span>
                         </Link>
                     </li>
                     <li className="mt-0.5 w-full">
