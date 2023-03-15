@@ -40,6 +40,7 @@ import facebook from "@/assets/img/icons/facebook.svg";
 import apple from "@/assets/img/icons/apple.svg";
 import google from "@/assets/img/icons/google.svg";
 import Link from "next/link";
+import axios from "axios";
 
 const inter = Open_Sans({subsets: ['latin']})
 
@@ -47,9 +48,34 @@ const inter = Open_Sans({subsets: ['latin']})
 
 export default function RootLayout({children}) {
 
-    let [isAuth,setIsAuth] = useState(false)
-    let [isClicked,setIsClicked] = useState(false)
-    useEffect(()=>{setIsAuth(true)},[isClicked])
+    let [isAuth,setIsAuth] = useState(!!localStorage.getItem('token'))
+
+
+    const login = () =>{
+
+        let bodyFormData = new FormData();
+        bodyFormData.append('email', 'admin@workinton.com');
+        bodyFormData.append('password', '1234');
+
+        axios({
+            method: "post",
+            url: "https://furkan.eu.pythonanywhere.com/api/login/",
+            data: bodyFormData,
+            headers: { "Content-Type": "multipart/form-data" },
+        })
+            .then(function (response) {
+                //handle success
+                console.log(response);
+                setIsAuth(true);
+                localStorage.setItem('token',response.data.access)
+            })
+            .catch(function (response) {
+                //handle error
+                console.log(response);
+            });
+    }
+
+
     if (!isAuth) {
         return (
             <>
@@ -83,44 +109,7 @@ export default function RootLayout({children}) {
 
                     <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"></Script>
                 </Head>
-                <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
-                <Script src="js/charts.js" crossOrigin="anonymous"></Script>
-                <Script src="js/plugins/chartjs.min.js"/>
-                <Script src="js/charts.js"/>
-                <Script src="js/plugins/threejs.js"/>
-                <Script src="js/plugins/orbit-controls.js"/>
-                <Script src="js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
-                <Script src="js/plugins/fullcalendar.min.js"/>
-                <Script src="js/plugins/chartjs.min.js"/>
-                <Script src="js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="https://unpkg.com/@popperjs/core@2"></Script>
 
-                <Script src="js/plugins/fullcalendar.min.js"/>
-                <Script src="js/plugins/chartjs.min.js"/>
-                <Script src="js/plugins/chartjs.min.js"/>
-                <Script src="js/charts.js"/>
-                <Script src="js/plugins/threejs.js"/>
-                <Script src="js/plugins/orbit-controls.js"/>
-                <Script src="js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
-                <Script src="js/plugins/fullcalendar.min.js"/>
-                <Script src="js/plugins/chartjs.min.js"/>
-                <Script src="js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="js/plugins/perfect-scrollbar.min.js"/>
-
-                <Script src="https://kit.fontawesome.com/42d5adcbca.js" crossOrigin="anonymous"></Script>
-                <Script src="../assets/js/charts.js" crossOrigin="anonymous"></Script>
-                <Script src="../assets/js/plugins/chartjs.min.js"/>
-                <Script src="../assets/js/charts.js"/>
-                <Script src="../assets/js/plugins/threejs.js"/>
-                <Script src="../assets/js/plugins/orbit-controls.js"/>
-                <Script src="../assets/js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="../assets/js/soft-ui-dashboard-pro-tailwind.js?v=1.0.1"/>
-                <Script src="../assets/js/plugins/fullcalendar.min.js"/>
-                <Script src="../assets/js/plugins/chartjs.min.js"/>
-                <Script src="../assets/js/plugins/perfect-scrollbar.min.js"/>
-                <Script src="https://unpkg.com/@popperjs/core@2"></Script>
                 <body className="m-0 font-sans antialiased
                                 font-normal text-left leading-default text-base
                                 dark:bg-slate-950 bg-gray-50 text-slate-500 dark:text-white/80">
@@ -173,12 +162,55 @@ export default function RootLayout({children}) {
                                         </div>
                                     </div>
                                     <div className="flex-auto p-6 text-center">
-                                        <form role="form text-left">
+                                        {/*<form role="form text-left">*/}
+                                        {/*    <div className="mb-4">*/}
+                                        {/*        <input type="email"*/}
+                                        {/*               className="text-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"*/}
+                                        {/*               placeholder="Email" aria-label="Email"*/}
+                                        {/*               aria-describedby="email-addon"/>*/}
+                                        {/*    </div>*/}
+                                        {/*    <div className="mb-4">*/}
+                                        {/*        <input type="password"*/}
+                                        {/*               className="text-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"*/}
+                                        {/*               placeholder="Password" aria-label="Password"*/}
+                                        {/*               aria-describedby="password-addon"/>*/}
+                                        {/*    </div>*/}
+                                        {/*    <div className="min-h-6 mb-0.5 block pl-12 text-left">*/}
+                                        {/*        <input id="rememberMe"*/}
+                                        {/*               className="mt-0.5 rounded-10 duration-250 ease-soft-in-out after:rounded-circle after:shadow-soft-2xl after:duration-250 checked:after:translate-x-5.3 h-5 relative float-left -ml-12 w-10 cursor-pointer appearance-none border border-solid border-gray-200 bg-slate-800/10 bg-none bg-contain bg-left bg-no-repeat align-top transition-all after:absolute after:top-px after:h-4 after:w-4 after:translate-x-px after:bg-white after:content-[''] checked:border-slate-800/95 checked:bg-slate-800/95 checked:bg-none checked:bg-right"*/}
+                                        {/*               type="checkbox" checked=""/>*/}
+                                        {/*        <label*/}
+                                        {/*            className="mb-2 ml-1 font-normal cursor-pointer select-none text-sm text-slate-700"*/}
+                                        {/*            htmlFor="rememberMe">Remember me</label>*/}
+                                        {/*    </div>*/}
+                                        {/*    <div className="text-center">*/}
+                                        {/*        <Link type="button" href={'/'}*/}
+                                        {/*              className="inline-block w-full px-6 py-3 mt-6 mb-2*/}
+                                        {/*        font-bold text-center text-white uppercase align-middle transition-all bg-transparent*/}
+                                        {/*         border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs*/}
+                                        {/*         leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150*/}
+                                        {/*          bg-x-25 bg-gradient-to-tl from-blue-600 to-cyan-400 hover:border-slate-700 hover:bg-slate-700 hover:text-white">*/}
+                                        {/*            <button onClick={()=>setIsClicked(true)}>Sign in</button>*/}
+
+                                        {/*        </Link>*/}
+                                        {/*    </div>*/}
+                                        {/*    <div className="relative w-full max-w-full px-3 mb-2 text-center shrink-0">*/}
+                                        {/*        <p className="inline mb-2 px-4 text-slate-400 bg-white z-2 text-sm leading-normal font-semibold before:bg-gradient-to-r before:from-transparent before:via-neutral-500/40 before:to-neutral-500/40 before:right-2 before:-ml-1/2 before:content-[''] before:inline-block before:w-3/10 before:h-px before:relative before:align-middle after:left-2 after:-mr-1/2 after:bg-gradient-to-r after:from-neutral-500/40 after:via-neutral-500/40 after:to-transparent after:content-[''] after:inline-block after:w-3/10 after:h-px after:relative after:align-middle">Don't*/}
+                                        {/*            have an account?</p>*/}
+                                        {/*    </div>*/}
+                                        {/*    <div className="text-center">*/}
+                                        {/*        <a href="../../pages/authentication/signup/illustration.html"*/}
+                                        {/*           className="inline-block w-full px-6 py-3 mt-2 mb-6 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 hover:border-slate-700 hover:bg-slate-700 hover:text-white">Sign*/}
+                                        {/*            up</a>*/}
+                                        {/*    </div>*/}
+                                        {/*</form>*/}
+
+                                        <form onSubmit={login} role="form text-left">
                                             <div className="mb-4">
                                                 <input type="email"
                                                        className="text-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                                        placeholder="Email" aria-label="Email"
-                                                       aria-describedby="email-addon"/>
+                                                       aria-describedby="email-addon" id="first" name="first"  required/>
                                             </div>
                                             <div className="mb-4">
                                                 <input type="password"
@@ -186,14 +218,8 @@ export default function RootLayout({children}) {
                                                        placeholder="Password" aria-label="Password"
                                                        aria-describedby="password-addon"/>
                                             </div>
-                                            <div className="min-h-6 mb-0.5 block pl-12 text-left">
-                                                <input id="rememberMe"
-                                                       className="mt-0.5 rounded-10 duration-250 ease-soft-in-out after:rounded-circle after:shadow-soft-2xl after:duration-250 checked:after:translate-x-5.3 h-5 relative float-left -ml-12 w-10 cursor-pointer appearance-none border border-solid border-gray-200 bg-slate-800/10 bg-none bg-contain bg-left bg-no-repeat align-top transition-all after:absolute after:top-px after:h-4 after:w-4 after:translate-x-px after:bg-white after:content-[''] checked:border-slate-800/95 checked:bg-slate-800/95 checked:bg-none checked:bg-right"
-                                                       type="checkbox" checked=""/>
-                                                <label
-                                                    className="mb-2 ml-1 font-normal cursor-pointer select-none text-sm text-slate-700"
-                                                    htmlFor="rememberMe">Remember me</label>
-                                            </div>
+
+                                            <button type="submit">Submit</button>
                                             <div className="text-center">
                                                 <Link type="button" href={'/'}
                                                       className="inline-block w-full px-6 py-3 mt-6 mb-2
@@ -201,7 +227,7 @@ export default function RootLayout({children}) {
                                                  border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs
                                                  leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150
                                                   bg-x-25 bg-gradient-to-tl from-blue-600 to-cyan-400 hover:border-slate-700 hover:bg-slate-700 hover:text-white">
-                                                    <button onClick={()=>setIsClicked(true)}>Sign in</button>
+                                                    <button onClick={()=>login()}>Sign in</button>
 
                                                 </Link>
                                             </div>
@@ -210,7 +236,7 @@ export default function RootLayout({children}) {
                                                     have an account?</p>
                                             </div>
                                             <div className="text-center">
-                                                <a href="../../pages/authentication/signup/illustration.html"
+                                                <a href="/"
                                                    className="inline-block w-full px-6 py-3 mt-2 mb-6 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 hover:border-slate-700 hover:bg-slate-700 hover:text-white">Sign
                                                     up</a>
                                             </div>
@@ -271,6 +297,7 @@ export default function RootLayout({children}) {
                         </div>
                     </div>
                 </footer>
+
                 </body>
 
                 {/*<script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>*/}

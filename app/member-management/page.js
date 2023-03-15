@@ -1,7 +1,9 @@
 import React from 'react';
+import Link from "next/link";
 
 
 const MemberManagement = () => {
+
     return (
         <>
             <nav navbar-main
@@ -101,7 +103,6 @@ const MemberManagement = () => {
 
                                 </a>
                             </li>
-
 
 
                             <li className="relative flex items-center pr-2">
@@ -475,6 +476,7 @@ const MemberManagement = () => {
                                     className="items-center w-full mb-0 align-top border-gray-200 text-slate-500 dark:border-white/40">
                                     <thead className="align-bottom">
                                     <tr>
+
                                         <th className="px-6 py-3 font-bold uppercase align-middle bg-transparent border-b border-gray-200 border-solid shadow-none text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">name</th>
                                         <th className="px-6 py-3 pl-2 font-bold uppercase align-middle bg-transparent border-b border-gray-200 border-solid shadow-none text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">function</th>
                                         <th className="px-6 py-3 pl-2 font-bold uppercase align-middle bg-transparent border-b border-gray-200 border-solid shadow-none text-xxs tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">review</th>
@@ -485,19 +487,21 @@ const MemberManagement = () => {
                                     </thead>
                                     <tbody className="border-t-2 border-current border-solid dark:border-white/40">
                                     <tr>
-                                        <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
-                                            <div className="flex px-2 py-1">
-                                                <div>
-                                                    <img
-                                                        className="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 text-sm ease-soft-in-out h-9 w-9 rounded-xl"
-                                                        src="../../../assets/img/team-2.jpg" alt="avatar image"/>
+                                        <Link href={'/settings'}>
+                                            <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
+                                                <div className="flex px-2 py-1">
+                                                    <div>
+                                                        <img
+                                                            className="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 text-sm ease-soft-in-out h-9 w-9 rounded-xl"
+                                                            src="../../../assets/img/team-2.jpg" alt="avatar image"/>
+                                                    </div>
+                                                    <div className="flex flex-col justify-center">
+                                                        <h6 className="mb-0 leading-normal text-sm dark:text-white">John
+                                                            Michael</h6>
+                                                    </div>
                                                 </div>
-                                                <div className="flex flex-col justify-center">
-                                                    <h6 className="mb-0 leading-normal text-sm dark:text-white">John
-                                                        Michael</h6>
-                                                </div>
-                                            </div>
-                                        </td>
+                                            </td>
+                                        </Link>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <p className="mb-0 leading-normal text-sm text-slate-400 dark:text-white/80">Manager</p>
                                         </td>
@@ -519,21 +523,24 @@ const MemberManagement = () => {
                                             <span
                                                 className="leading-normal text-sm text-slate-400 dark:text-white/80">43431</span>
                                         </td>
+
                                     </tr>
                                     <tr>
-                                        <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
-                                            <div className="flex px-2 py-1">
-                                                <div>
-                                                    <img
-                                                        className="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 text-sm ease-soft-in-out h-9 w-9 rounded-xl"
-                                                        src="../../../assets/img/team-3.jpg" alt="avatar image"/>
+                                        <Link href={'/settings'}>
+                                            <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
+                                                <div className="flex px-2 py-1">
+                                                    <div>
+                                                        <img
+                                                            className="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 text-sm ease-soft-in-out h-9 w-9 rounded-xl"
+                                                            src="../../../assets/img/team-3.jpg" alt="avatar image"/>
+                                                    </div>
+                                                    <div className="flex flex-col justify-center">
+                                                        <h6 className="mb-0 leading-normal text-sm dark:text-white">Alexa
+                                                            Liras</h6>
+                                                    </div>
                                                 </div>
-                                                <div className="flex flex-col justify-center">
-                                                    <h6 className="mb-0 leading-normal text-sm dark:text-white">Alexa
-                                                        Liras</h6>
-                                                </div>
-                                            </div>
-                                        </td>
+                                            </td>
+                                        </Link>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <p className="mb-0 leading-normal text-sm text-slate-400 dark:text-white/80">Programator</p>
                                         </td>
@@ -557,6 +564,7 @@ const MemberManagement = () => {
                                         </td>
                                     </tr>
                                     <tr>
+                                        <Link href={'/settings'}>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <div className="flex px-2 py-1">
                                                 <div>
@@ -570,6 +578,7 @@ const MemberManagement = () => {
                                                 </div>
                                             </div>
                                         </td>
+                                        </Link>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <p className="mb-0 leading-normal text-sm text-slate-400 dark:text-white/80">Executive</p>
                                         </td>
@@ -593,6 +602,7 @@ const MemberManagement = () => {
                                         </td>
                                     </tr>
                                     <tr>
+                                        <Link href={'/settings'}>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <div className="flex px-2 py-1">
                                                 <div>
@@ -606,6 +616,7 @@ const MemberManagement = () => {
                                                 </div>
                                             </div>
                                         </td>
+                                        </Link>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <p className="mb-0 leading-normal text-sm text-slate-400 dark:text-white/80">Backend
                                                 developer</p>
@@ -630,6 +641,7 @@ const MemberManagement = () => {
                                         </td>
                                     </tr>
                                     <tr>
+                                        <Link href={'/settings'}>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <div className="flex px-2 py-1">
                                                 <div>
@@ -643,6 +655,7 @@ const MemberManagement = () => {
                                                 </div>
                                             </div>
                                         </td>
+                                        </Link>
                                         <td className="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
                                             <p className="mb-0 leading-normal text-sm text-slate-400 dark:text-white/80">Manager</p>
                                         </td>
@@ -666,6 +679,7 @@ const MemberManagement = () => {
                                         </td>
                                     </tr>
                                     <tr>
+                                        <Link href={'/settings'}>
                                         <td className="p-2 align-middle bg-transparent whitespace-nowrap">
                                             <div className="flex px-2 py-1">
                                                 <div>
@@ -679,6 +693,7 @@ const MemberManagement = () => {
                                                 </div>
                                             </div>
                                         </td>
+                                        </Link>
                                         <td className="p-2 align-middle bg-transparent whitespace-nowrap">
                                             <p className="mb-0 leading-normal text-sm text-slate-400 dark:text-white/80">Programator</p>
                                         </td>
