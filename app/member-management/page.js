@@ -213,41 +213,44 @@ const MemberManagement = () => {
                                     <span
                                         className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 rounded-2xl opacity-90"> </span>
                                     <div className="relative flex-auto p-4">
-                                        <div className="flex flex-wrap -mx-3">
-                                            <div className="w-8/12 max-w-full px-3 text-left flex-0">
-                                                <div
-                                                    className="inline-block w-12 h-12 text-center text-black bg-white bg-center rounded-lg fill-current stroke-none shadow-soft-2xl">
-                                                    <i className="ni leading-none ni-circle-08 bg-gradient-to-tl from-gray-900 to-slate-800 text-lg relative top-3.5 z-10 bg-clip-text text-transparent"></i>
+                                        <Link href={'/new-user'}>
+                                            <div className="flex flex-wrap -mx-3">
+                                                <div className="w-8/12 max-w-full px-3 text-left flex-0">
+                                                    <div
+                                                        className="inline-block w-12 h-12 text-center text-black bg-white bg-center rounded-lg fill-current stroke-none shadow-soft-2xl">
+                                                        <i className="ni leading-none ni-circle-08 bg-gradient-to-tl from-gray-900 to-slate-800 text-lg relative top-3.5 z-10 bg-clip-text text-transparent"></i>
+                                                    </div>
+                                                    <h5 className="mt-4 mb-0 font-bold text-white">1600</h5>
+                                                    <span className="leading-normal text-white text-sm">Users Active</span>
                                                 </div>
-                                                <h5 className="mt-4 mb-0 font-bold text-white">1600</h5>
-                                                <span className="leading-normal text-white text-sm">Users Active</span>
-                                            </div>
-                                            <div className="w-4/12 max-w-full px-3 flex-0">
-                                                <div className="relative mb-16 text-right">
-                                                    <a href="javascript:;" className="cursor-pointer" dropdown-trigger
-                                                       aria-expanded="false">
-                                                        <i className="text-white fa fa-ellipsis-h"></i>
-                                                    </a>
-                                                    <p className="hidden transform-dropdown-show"></p>
-                                                    <ul dropdown-menu
-                                                        className="dark:shadow-soft-dark-xl z-100 dark:bg-gray-950 text-sm lg:shadow-soft-3xl duration-250 before:duration-350 before:font-awesome before:ease-soft min-w-44 before:text-5.5 transform-dropdown pointer-events-none absolute right-0 left-auto top-0 m-0 -mr-4 mt-0 list-none rounded-lg border-0 border-solid border-transparent bg-white bg-clip-padding px-0 py-2 text-left text-slate-500 opacity-0 transition-all before:absolute before:right-7 before:left-auto before:top-0 before:z-40 before:text-white before:transition-all before:content-['\f0d8'] sm:-mr-6">
-                                                        <li>
-                                                            <a className="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap rounded-lg border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-white dark:hover:bg-gray-200/80 dark:hover:text-slate-700 lg:transition-colors lg:duration-300"
-                                                               href="javascript:;">Action</a>
-                                                        </li>
-                                                        <li>
-                                                            <a className="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap rounded-lg border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-white dark:hover:bg-gray-200/80 dark:hover:text-slate-700 lg:transition-colors lg:duration-300"
-                                                               href="javascript:;">Another action</a>
-                                                        </li>
-                                                        <li>
-                                                            <a className="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap rounded-lg border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-white dark:hover:bg-gray-200/80 dark:hover:text-slate-700 lg:transition-colors lg:duration-300"
-                                                               href="javascript:;">Something else here</a>
-                                                        </li>
-                                                    </ul>
+                                                <div className="w-4/12 max-w-full px-3 flex-0">
+                                                    <div className="relative mb-16 text-right">
+                                                        <a href="javascript:;" className="cursor-pointer" dropdown-trigger
+                                                           aria-expanded="false">
+                                                            <i className="text-white fa fa-ellipsis-h"></i>
+                                                        </a>
+                                                        <p className="hidden transform-dropdown-show"></p>
+                                                        <ul dropdown-menu
+                                                            className="dark:shadow-soft-dark-xl z-100 dark:bg-gray-950 text-sm lg:shadow-soft-3xl duration-250 before:duration-350 before:font-awesome before:ease-soft min-w-44 before:text-5.5 transform-dropdown pointer-events-none absolute right-0 left-auto top-0 m-0 -mr-4 mt-0 list-none rounded-lg border-0 border-solid border-transparent bg-white bg-clip-padding px-0 py-2 text-left text-slate-500 opacity-0 transition-all before:absolute before:right-7 before:left-auto before:top-0 before:z-40 before:text-white before:transition-all before:content-['\f0d8'] sm:-mr-6">
+                                                            <li>
+                                                                <a className="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap rounded-lg border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-white dark:hover:bg-gray-200/80 dark:hover:text-slate-700 lg:transition-colors lg:duration-300"
+                                                                   href="javascript:;">Action</a>
+                                                            </li>
+                                                            <li>
+                                                                <a className="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap rounded-lg border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-white dark:hover:bg-gray-200/80 dark:hover:text-slate-700 lg:transition-colors lg:duration-300"
+                                                                   href="javascript:;">Another action</a>
+                                                            </li>
+                                                            <li>
+                                                                <a className="py-1.2 lg:ease-soft clear-both block w-full whitespace-nowrap rounded-lg border-0 bg-transparent px-4 text-left font-normal text-slate-500 hover:bg-gray-200 hover:text-slate-700 dark:text-white dark:hover:bg-gray-200/80 dark:hover:text-slate-700 lg:transition-colors lg:duration-300"
+                                                                   href="javascript:;">Something else here</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p className="mt-auto mb-0 font-bold leading-normal text-right text-white text-sm dark:text-white/60">+55%</p>
                                                 </div>
-                                                <p className="mt-auto mb-0 font-bold leading-normal text-right text-white text-sm dark:text-white/60">+55%</p>
                                             </div>
-                                        </div>
+                                        </Link>
+
                                     </div>
                                 </div>
                             </div>
@@ -257,6 +260,7 @@ const MemberManagement = () => {
                                     className="dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl relative flex min-w-0 flex-col break-words rounded-2xl border-0 bg-white bg-clip-border">
                                     <span
                                         className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 rounded-2xl opacity-90"> </span>
+                                    <Link href={'/new-user'}>
                                     <div className="relative flex-auto p-4">
                                         <div className="flex flex-wrap -mx-3">
                                             <div className="w-8/12 max-w-full px-3 text-left flex-0">
@@ -294,6 +298,8 @@ const MemberManagement = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    </Link>
+
                                 </div>
                             </div>
                         </div>
@@ -304,6 +310,7 @@ const MemberManagement = () => {
                                     className="dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl relative flex min-w-0 flex-col break-words rounded-2xl border-0 bg-white bg-clip-border">
                                     <span
                                         className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 rounded-2xl opacity-90"> </span>
+                                    <Link href={'/new-user'}>
                                     <div className="relative flex-auto p-4">
                                         <div className="flex flex-wrap -mx-3">
                                             <div className="w-8/12 max-w-full px-3 text-left flex-0">
@@ -341,7 +348,9 @@ const MemberManagement = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
+
+                            </div>
                             </div>
 
                             <div className="w-full max-w-full px-3 mt-6 flex-0 md:mt-0 md:w-6/12">
@@ -349,6 +358,7 @@ const MemberManagement = () => {
                                     className="dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl relative flex min-w-0 flex-col break-words rounded-2xl border-0 bg-white  bg-clip-border">
                                     <span
                                         className="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 rounded-2xl opacity-90"> </span>
+                                    <Link href={'/new-user'}>
                                     <div className="relative flex-auto p-4">
                                         <div className="flex flex-wrap -mx-3">
                                             <div className="w-8/12 max-w-full px-3 text-left flex-0">
@@ -386,7 +396,9 @@ const MemberManagement = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
+
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -452,7 +464,7 @@ const MemberManagement = () => {
                                     <p className="leading-normal text-sm dark:text-white/60">
                                         More than
                                         <b>1,500,000</b>
-                                        developers used Creative Tim's products and over
+                                        developers used products and over
                                         <b>700,000</b>
                                         projects were created.
                                     </p>

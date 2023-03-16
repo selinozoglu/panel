@@ -172,7 +172,7 @@ const Login = (props) => {
                         <p className="mb-0 text-slate-400">
                             Copyright ©
                             <script>document.write(new Date().getFullYear())</script>
-                            Soft by Creative Tim.
+                            Soft by
                         </p>
                     </div>
                 </div>
