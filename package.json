@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.3.0",
-    "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome",
-    "fortawesome": "^0.0.1-security"
-  }
-}
